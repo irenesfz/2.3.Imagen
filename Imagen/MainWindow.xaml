@@ -1,0 +1,23 @@
+﻿<Window x:Class="Imagen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Imagen"
+        Icon="assets/32.ico"
+        mc:Ignorable="d"
+        Title="Imagen" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="StarWarsImage" HorizontalAlignment="Left" Height="367" Source="episodioIV.jpg" Margin="31,22,0,0" VerticalAlignment="Top" Width="490"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Opacidad" VerticalAlignment="Top" Margin="573,53,0,0" Width="141" FontSize="20" FontWeight="Bold"/>
+        <RadioButton x:Name="AltaRadioButton" GroupName="Opacidad" Content="Alta" IsChecked="True" HorizontalAlignment="Left" Margin="573,89,0,0" VerticalAlignment="Top" Checked="AltaRadioButton_Checked"/>
+        <RadioButton x:Name="MediaRadioButton" GroupName="Opacidad" Content="Media" HorizontalAlignment="Left" Margin="573,119,0,0" VerticalAlignment="Top" Checked="MediaRadioButton_Checked"/>
+        <RadioButton x:Name="BajaRadioButton" GroupName="Opacidad" Content="Baja" HorizontalAlignment="Left" Margin="573,147,0,0" VerticalAlignment="Top" Checked="BajaRadioButton_Checked"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ajuste" VerticalAlignment="Top" Margin="573,214,0,0" Width="141" FontSize="20" FontWeight="Bold"/>
+        <RadioButton x:Name="RellenoRadioButton" GroupName="Ajuste" Content="Relleno (Fill)" IsChecked="True" HorizontalAlignment="Left" Margin="573,252,0,0" VerticalAlignment="Top" Checked="RellenoRadioButton_Checked"/>
+        <RadioButton x:Name="UniformeRadioButton" GroupName="Ajuste" Content="Uniforme (Uniform)" HorizontalAlignment="Left" Margin="573,284,0,0" VerticalAlignment="Top" Checked="UniformeRadioButton_Checked"/>
+        <RadioButton x:Name="RellenoUniformeRadioButton" GroupName="Ajuste" Content="Relleno Uniforme (UniformToFill)" HorizontalAlignment="Left" Margin="573,315,0,0" VerticalAlignment="Top" Checked="RellenoUniformeRadioButton_Checked"/>
+        <RadioButton x:Name="NoneRadioButton" GroupName="Ajuste" Content="Sin ajuste (None)" HorizontalAlignment="Left" Margin="573,345,0,0" VerticalAlignment="Top" Checked="NoneRadioButton_Checked"/>
+
+    </Grid>
+</Window>
